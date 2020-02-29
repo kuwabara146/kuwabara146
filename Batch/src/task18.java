@@ -6,7 +6,6 @@ public class task18 {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("数字を入力してください: ");
 		int num = sc.nextInt();
-		System.out.println(num);
 		sc.close();
 
 		int sum = 0;
