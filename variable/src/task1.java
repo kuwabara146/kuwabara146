@@ -1,8 +1,8 @@
 
 public class task1 {
 
-	public static void main(String[] args) {
-		double a = 31.2;
+    public static void main(String[] args) {
+        double a = 31.2;
         String b = "Java研修";
         int c = 9;
         long d = 2147483648L;
@@ -13,6 +13,6 @@ public class task1 {
         System.out.println(c);
         System.out.println(d);
         System.out.println(e);
-	}
+    }
 
 }

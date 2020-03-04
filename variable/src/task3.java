@@ -1,19 +1,18 @@
 
 public class task3 {
 
-	public static void main(String[] args) {
-		int intNum = 219;
+    public static void main(String[] args) {
+        int intNum = 219;
         double doubleNum = 364.2;
         long longNum = 123456L;
 
-        long a = intNum;
-        System.out.println(a);
+        long longNumA = intNum;
+        float floatNum = (float)doubleNum;
+        double doubleNumA = longNum;
 
-        float b = (float)doubleNum;
-        System.out.println(b);
-
-        double c = longNum;
-        System.out.println(c);
-	}
+        System.out.println(longNumA);
+        System.out.println(floatNum);
+        System.out.println(doubleNumA);
+    }
 
 }
