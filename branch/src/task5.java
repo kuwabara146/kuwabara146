@@ -2,26 +2,27 @@ import java.util.Scanner;
 
 public class task5 {
 
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int numA = sc.nextInt();
-		System.out.println("numA: " + numA);
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("numA: ");
+        int numA = sc.nextInt();
+        System.out.print("numB: ");
+        int numB = sc.nextInt();
+        System.out.print("numC: ");
+        int numC = sc.nextInt();
+        sc.close();
 
-		int numB = sc.nextInt();
-		System.out.println("numB: " + numB);
+        int max = numA;
 
-		int numC = sc.nextInt();
-		System.out.println("numC: " + numC);
-		sc.close();
+        if(max < numB) {
+            max = numB;
+        }
+        if(max < numC) {
+            max = numC;
+        }
 
-		if(numA > numB && numA > numC) {
-			System.out.println("最大値: " + numA);
-		}else if(numB > numC) {
-			System.out.println("最大値: " + numB);
-		}else {
-			System.out.println("最大値: " + numC);
-		}
+        System.out.println("最大値: " + max);
 
-	}
+    }
 
 }
