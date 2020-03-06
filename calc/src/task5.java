@@ -2,24 +2,20 @@ import java.util.Scanner;
 
 public class task5 {
 
-	public static void main(String[] args) {
-		String a = "ノートPCの値段:";
-		int b = 89800;
-		char c = '円';
+    public static void main(String[] args) {
+//処理1
+        String str = "ノートPCの値段:";
+        int intPrice = 89800;
+        char ch = '円';
 
-		System.out.println(a + b + c);
+        System.out.println(str + intPrice + ch);
+//処理2
+        Scanner sc = new Scanner(System.in);
+        String str1 = sc.nextLine();
+        String str2 = sc.nextLine();
+        sc.close();
 
-		Scanner sc = new Scanner(System.in);
-
-		String str1 = sc.nextLine();
-		System.out.println(str1);
-
-		String str2 = sc.nextLine();
-		System.out.println(str2);
-
-		sc.close();
-
-		System.out.println(str1 + str2);
-	}
+        System.out.println(str1 + str2);
+    }
 
 }

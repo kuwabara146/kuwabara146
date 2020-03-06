@@ -1,14 +1,13 @@
 
 public class task4 {
 
-	public static void main(String[] args) {
-		int a = 192837;
-		int b = a / 10;
-		int c = a % (b * 10);
+    public static void main(String[] args) {
+        int numA = 192837;
+        int numB = numA / 10;
+        int numC = numA % (numB * 10);
 
-		System.out.println("一の位を除く数:" + b);
-
-		System.out.println("一の位の数:" + c);
-	}
+        System.out.println("一の位を除く数:" + numB);
+        System.out.println("一の位の数:" + numC);
+    }
 
 }
