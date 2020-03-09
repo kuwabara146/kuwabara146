@@ -12,8 +12,7 @@ public class task1 {
 
         if(num > 9) {
             System.out.println("値: " + num);
-        }
-        if(num < 10) {
+        }else {
             num = num * 10;
             System.out.println("値: " + num);
         }
