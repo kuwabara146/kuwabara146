@@ -10,12 +10,11 @@ public class task1 {
         System.out.println(num);
         sc.close();
 
-        if(num > 9) {
-            System.out.println("値: " + num);
-        }else {
+        //受け取った整数が1桁の場合は10倍する
+        if(num < 10) {
             num = num * 10;
-            System.out.println("値: " + num);
         }
+            System.out.println("値: " + num);
     }
 
 }
