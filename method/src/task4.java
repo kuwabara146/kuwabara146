@@ -8,7 +8,7 @@ public class task4 {
         System.out.println(nullCheck(array1));
 
         //"null"を含む配列を引数にしてメソッドを呼び出した場合
-        String[] array2 = {"a", "null", "c"};
+        String[] array2 = {"a", null, "c"};
         System.out.println("---配列にnullがある場合---");
         System.out.println(nullCheck(array2));
 
@@ -18,7 +18,7 @@ public class task4 {
 
         //引数で受け取った配列に"null"がある場合はcheckにtrueを代入
         for(int i = 0; i < array.length; i++) {
-            if(array[i] == "null") {
+            if(array[i] == null) {
                 check = true;
             }
         }
