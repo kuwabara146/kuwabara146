@@ -23,27 +23,8 @@ public class task2 {
             }
         }
 
-        //奇数を表示する処理
-        System.out.print("奇数: [");
-        int aryOddSize = aryOddNum.size();
-        for(int j = 0; j < aryOddSize; j++) {
-            System.out.print(aryOddNum.get(j));
-            if(j < aryOddSize - 1) {
-                System.out.print(", ");
-            }
-        }
-        System.out.println("]");
-
-        //偶数を表示する処理
-        System.out.print("偶数: [");
-        int aryEvenSize = aryEvenNum.size();
-        for(int k = 0; k < aryEvenSize; k++) {
-            System.out.print(aryEvenNum.get(k));
-            if(k < aryEvenSize - 1) {
-                System.out.print(", ");
-            }
-        }
-        System.out.println("]");
+        System.out.println("奇数: " + aryOddNum);
+        System.out.println("偶数: " + aryEvenNum);
     }
 
 }
