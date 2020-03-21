@@ -1,9 +1,12 @@
 
 public class Person {
     //お財布(静的フィールド)
-    static int wallet = 0;
+    public static int wallet = 0;
     //名前
     private String name = "";
+    //年齢
+    private int age = 0;
+
     //nameフィールドのgetter
     public String getName() {
         return this.name;
@@ -12,25 +15,25 @@ public class Person {
     public void setName(String name) {
         this.name = name;
     }
-    //年齢
-    private int age = 0;
-    //nameフィールドのgetter
+
+    //ageフィールドのgetter
     public int getAge() {
         return this.age;
     }
-    //nameフィールドのsetter
+    //ageフィールドのsetter
     public void setAge(int age) {
         this.age = age;
     }
 
     //引数なしのコンストラクタ
-    Person(){}
+    public Person(){}
     //引数ありのコンストラクタ
-    Person(String name, int age){
+    public Person(String name, int age){
         this.name = name;
         this.age = age;
     }
-    Person(int money){
+    //課題2で追加したコンストラクタ
+    public Person(int money){
         wallet += money;
     }
 
