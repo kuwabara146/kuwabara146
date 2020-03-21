@@ -8,8 +8,7 @@ public class Task3 {
 
         //文字列を逆順に表示する処理
         for(int i = str.length() - 1; i >= 0; i--) {
-            char ch = str.charAt(i);
-            System.out.print(ch);
+            System.out.print(str.charAt(i));
         }
         System.out.println(": 列字文");
 
