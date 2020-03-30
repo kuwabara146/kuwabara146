@@ -3,14 +3,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<%! int sub(int a, int b){
+    <%! int substraction(int a, int b){
         return a - b;
-    } %>
-<meta charset="UTF-8">
-<title>JSP TASK</title>
+        } %>
+    <meta charset="UTF-8">
+    <title>JSP TASK</title>
 </head>
 <body>
-    <h1>125 - 15 = <%= sub(125,15) %></h1>
-    <h1>17 - 21 = <%= sub(17,21) %></h1>
+    <h1>125 - 15 = <%= substraction(125,15) %></h1>
+    <h1>17 - 21 = <%= substraction(17,21) %></h1>
 </body>
 </html>
