@@ -3,9 +3,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <%! int substraction(int a, int b){
-        return a - b;
-        } %>
+    <%!
+        int substraction(int a, int b){
+            return a - b;
+        }
+    %>
     <meta charset="UTF-8">
     <title>JSP TASK</title>
 </head>
