@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>お問い合わせフォーム</title>
+    </head>
+    <body>
+        <form action="Result" method="POST">
+            名前: <input type="text" name="name">
+            <br>
+            性別: 男<input type="radio" name="sex" value="男性">
+            女<input type="radio" name="sex" value="女性">
+            <br>
+            お問い合わせ種類
+            <br>
+            <select name="category">
+                <option>製品について
+                <option>不具合やクレーム
+                <option>アフターサポート
+            </select>
+            <br>
+            お問い合わせ内容
+            <p>
+            <textarea name="content" placeholder="     150文字以内で入力して下さい" rows="5" cols="60"></textarea>
+            </p>
+            <input type="submit" name="submitBtn" value="送信">
+        </form>
+    </body>
+</html>
