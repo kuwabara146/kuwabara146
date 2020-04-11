@@ -23,6 +23,15 @@ public class Result extends HttpServlet {
         String category = request.getParameter("category");
         String content = request.getParameter("content");
 
+        String supportCategory;
+        if(category.equals("support1")) {
+            supportCategory = "製品について";
+        }else if(category.equals("support2")) {
+            supportCategory = "不具合やクレーム";
+        }else {
+            supportCategory = "アフターサポート";
+        }
+
         response.setContentType("text/html; charset = UTF-8");
         PrintWriter out = response.getWriter();
         out.println("<!DOCTYPE html>");
@@ -35,7 +44,7 @@ public class Result extends HttpServlet {
         out.println("<p>以下の内容でお問い合わせしました。回答をお待ちください。</p>");
         out.println("名前:" + name + "様<br>");
         out.println("性別:" + sex + "<br>");
-        out.println("お問い合わせ種類:" + category + "<br>");
+        out.println("お問い合わせ種類:" + supportCategory + "<br>");
         out.println("お問い合わせ内容:" + content);
         out.println("</body>");
         out.println("</html>");
