@@ -51,7 +51,7 @@ public class register extends HttpServlet {
             ps.setDate(3, sqlBirthday);
             ps.setInt(4, Integer.parseInt(age));
 
-            int result = ps.executeUpdate();
+            ps.executeUpdate();
 
             //使用が終わったら切断
             ps.close();

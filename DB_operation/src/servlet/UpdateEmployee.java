@@ -45,7 +45,7 @@ public class UpdateEmployee extends HttpServlet {
             ps.setString(1, name);
             ps.setInt(2, Integer.parseInt(id));
 
-            int result = ps.executeUpdate();
+            ps.executeUpdate();
 
             //使用が終わったら切断
             ps.close();

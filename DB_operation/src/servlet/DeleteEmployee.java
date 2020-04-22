@@ -44,7 +44,7 @@ public class DeleteEmployee extends HttpServlet {
             //「？」に値を設定
             ps.setInt(1, Integer.parseInt(id));
 
-            int result = ps.executeUpdate();
+            ps.executeUpdate();
 
             //使用が終わったら切断
             ps.close();
